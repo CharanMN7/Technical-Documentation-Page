@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lange="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Charan Manikanta">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>MD Documentation</title>
+</head>
+<body id="top">
+
+  <nav id="navbar">
+    <header>MarkDown</header>
+    <p>Documentation</p>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#How_Markdown_Works">How Markdown Works</a></li>
+      <li><a class="nav-link" href="#Using_Markdown">Using Markdown</a></li>
+      <li><a class="nav-link" href="#Basic_Syntax">Basic Syntax</a></li>
+      <li><a class="nav-link" href="#Lists">Lists</a></li>
+      <li><a class="nav-link" href="#Links_and_Images">Links and Images</a></li>
+      <li><a class="nav-link" href="#Code">Code</a></li>
+      <li><a class="nav-link" href="#Horizontal_Rules">Horizontal Rules</a></li>
+    </ul>
+  </nav>
+
+  <a id="top-btn" href="#top"><i class="fa fa-chevron-up" aria-hidden="false"></i></a>
+  
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header id="first-heading">Introduction</header>
+      <p>
+        Markdown is a lightweight markup language for creating formatted text using a plain-text editor. It was created by John Gruber and Aaron Swartz in 2004. It was created as a markup language that is appelaing for human readers in its source code form. Its key design goal was <i>readability</i>, that the language is readable as is, without looking like it has been marked up with formatting instructions, unlike the much heavier markup languages like the RTF (Rich Text Formatting) or HTML(Hyper Text Markup Language).
+      </p>
+      <p>You can add Markdown formatting elements to a plaintext file using a text editor application. Or you can use one of the many Markdown applications for macOS, Windows, Linux, iOS, and Android operating systems. There are also several webbased applications specifically designed for writing in Markdown. Depending on the application you use, you may not be able to preview the formatted document in real time. But that’s okay. According to Gruber, Markdown syntax is designed to be readable and unobtrusive, so the text in Markdown files can be read even if it isn’t rendered.
+      </p>
+      <p>The overriding design goal for Markdown’s formatting syntax is to make it as readable as possible. The idea is that a Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions.
+      </p>
+    </section>
+    <section class="main-section" id="How_Markdown_Works">
+      <header>How Markdown Works</header>
+      <p>When you write in Markdown, it is stored as a plain text file saved with the <code>.md</code> or <code>.markdown</code> extension. Then you'll need a Markdown Application that will convert the Markdown-formatted text to HTML so that it can be displayed in web browsers.</p>
+      <p>Markdown applications use a <i>Markdown processor</i>(a parser or an implementation) to take Markdown-formatted text and output it as HTML.</p>
+    </section>
+    <section class="main-section" id="Using_Markdown">
+      <header>Using Markdown</header>
+      <p>Markdown is one of the most popular markup languages in the world. It can be used to do a variety of things! The following are some of the very popular uses of Markdown:</p>
+      <ul>
+        <li><strong>Websites</strong>: There are a wide range of tools available to use Markdown in your websitea. If you want to use a CMS (Content Management System) to power your site, popular CMS like Ghost & Wordpress support Markdown.</li>
+        <li><strong>Documents:</strong> You can use Markdown to write effectively formatted documents just as you would on any word processors except that you won't have all the sophisticated formatting features like shadows and 3D text.</li>
+        <li><strong>Notes:</strong> Markdown is great for notes. Markdown lets you write notes in your Text/Code editor.</li>
+        <li><strong>Documentation:</strong> Markdown is a natural fit for technical documentation. Companies like GitHub are increasingly switching to Markdown for their documentation.</li>
+        <li><strong>Books:</strong>Markdown is great for writing books. It is readable even in source code form making it easier for you to see the content and the formatting at the same time.</li>
+      </ul>
+    </section>
+    <section class="main-section" id="Basic_Syntax">
+      <header>Basic Syntax</header>
+      <p class="heading">Headings</p>
+      <p>To create a heading, add number signs (#) in front of the word or the phrase. The numebr of # signs correspond to the heading level.</p>
+      <code>
+        ----------<br>
+        # Level 1 Heading <br>
+        ## Level 2 Heading <br>
+        ...<br>
+        ###### Level 6 Heading<br>
+        ----------
+      </code>
+      <p>The above headings output exactly as their HTML equivalents. And you can even use the html tags to do the same in Markdown.</p>
+
+      <p class="heading">Paragraphs</p>
+      <p>To create a paragraph, you just write text. To seperate 2 paragraphs, leave an empty line between them. You shouldn't indent a paragraph.</p>
+      <code>
+        ----------<br>
+        This is a paragraph<br><br>
+
+        This is another paragraph!<br>
+        ----------
+      </code>
+
+      <p class="heading">Line Breaks</p>
+      <p>To create a line break, use 2 or more spaces and then use return/enter.</p>
+
+      <p class="heading">Bold Text</p>
+      <p>In order to use bold text, enclose the word or phrase in two asterisks or underscores on both sides.</p>
+      <code>
+        ----------<br>
+        This is **bold** text<br>
+        This is __bold text too__<br>
+        ----------
+      </code>
+
+      <p class="heading">Italic text</p>
+      <p>Enclose the text in single asterisks or underscores to create a italicized text</p>
+      <code>
+        ----------<br>
+        Some *italic* text<br>
+        More _italic text_<br>
+        ----------
+      </code>
+
+      <p class="heading">Bold and Italic</p>
+      <p>To emphasize text with both italics and bold at the same time, you can enclose the text in three underscores or asterisks.</p>
+      <code>
+        ----------<br>
+        ***Some Text***<br>
+        ___Some Text___<br>
+        _**This works too**_<br>
+        __*So will this.*__<br>
+        ----------
+      </code>
+
+      <p class="heading">Blockquotes</p>
+      <p>To enter text as a blockquote, add &gt; in front of the text.</p>
+      <code>
+        -----------<br>
+        > Remember! You are awesome!<br>
+        -----------
+      </code>
+    </section>
+
+    <section class="main-section" id="Lists">
+      <header>Lists</header>
+      <p class="heading">Ordered Lists</p>
+      <p>To create an ordered list, add line items with numbers followed by periods.</p>
+      <code>
+        -----------<br>
+        1. Rock the world<br>
+        2. Jump from a plane<br>
+        3. Go to gym<br>
+        -----------
+      </code>
+
+      <p class="heading">Nesting lists</p>
+      <p>To nest lines in an ordered list, indent the items four spaces or one tab.</p>
+      <code>
+        -----------<br>
+        1. Task 1<br>
+        2. Task 2<br>
+        &nbsp; &nbsp; 1. Task 2a<br>
+        &nbsp; &nbsp; 2. Task 2b<br>
+        3. Task 3<br>
+        -----------
+      </code>
+
+      <p class="heading">Unordered List</p>
+      <p>To create an unordered list, add dashes (-), asterisks (*), or plus signs (+) in front of line items.</p>
+      <code>
+        -----------<br>
+        - First item<br>
+        * Second item<br>
+        + Third item<br>
+        -----------
+      </code>
+    </section>
+
+    <section class="main-section" id="Links_and_Images">
+      <header>Links and Images</header>
+      <p class="heading">Links</p>
+      <p>To use links for words/phrases in your document, enclose it in square brackets, followed by parantheses in you must include the URL.</p>
+      <code>
+        -----------<br>
+        Click [here](https://bio.link/charanmanikanta)<br>
+        -----------
+      </code>
+
+      <p class="heading">Images</p>
+      <p>The syntax to include an image and a link is very similar. You can insert an image by writing an exclamation mark followed by square brackets, and parantheses containing the location URL of the image. You can optionally put text describing the image, inside the square brackets.</p>
+      <code>
+        -----------<br>
+        ![Image of a fluffy orange cat](https://www.mywebsite.com/fluffy-orange-cat.png)<br>
+        -----------
+      </code>
+    </section>
+
+    <section class="main-section" id="Code">
+      <header>Code</header>
+      <p>Enclode the text between backticks to format it to look like code.</p>
+      <code>
+        ------------<br>
+        The `array.splice()` is a very useful function in JavaScript<br>
+        ------------
+      </code>
+    </section>
+
+    <section class="main-section" id="Horizontal_Rules">
+      <header>Horizontal Rules</header>
+      <p>To create a horizontal rule, use three or more asterisks (***), dashes (---), or
+underscores (___) on a line by themselves.</p>
+      <code>
+        ------------<br>
+        ***<br>
+        ---<br>
+        ________<br>
+        ------------
+      </code>
+    </section>
+  </main>
+</body>
+</html>
